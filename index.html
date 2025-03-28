@@ -1,0 +1,56 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Marked in the browser</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css"
+      rel="stylesheet"
+    />
+    <!-- for using markdown cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="navIcon">
+          <i class="ri-sidebar-unfold-fill"></i>
+
+          <div id="iconText">
+            <h3>Markpad</h3>
+            <p>Simple and beautiful markdown editor</p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="container">
+        <button id="resetBtn">Reset</button>
+        <div id="textContainer">
+          <p><i class="ri-arrow-down-s-line"></i>Editor</p>
+          <textarea
+            name="text"
+            id="textArea"
+            placeholder="Your Markdown Here..."
+          ></textarea>
+        </div>
+        <div id="contentContainer">
+          <p><i class="ri-arrow-down-s-line"></i>Preview</p>
+
+          <div id="preview"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.3.2/markdown-it.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
